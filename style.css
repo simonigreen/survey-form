@@ -1,0 +1,51 @@
+body {
+	background-color: grey;
+}
+
+header {
+	text-align: center;
+}
+
+main {
+	background-color: #FFFFFF;
+	max-width: 800px;
+	width: 85%;
+	margin: auto;
+	padding: 40px 40px 40px 40px;
+}
+
+#description {
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+form {
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+label {
+    grid-column: 1 / 2;
+    text-align: right;
+}
+
+input,
+button {
+    grid-column: 2 / 3;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  grid-column: 2 / 3;
+}
+
+input, label {
+  margin-bottom:10px;
+}
+
+p {
+	text-align: right;
+}

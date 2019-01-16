@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1 id="title">Survey Form</h1>
+	</header>
+		
+	<main>
+		<p id="description">Please let us know more about your music production experience</p>
+
+		<form id="survey-form" class="survey-form">
+			
+			<!-- basic required inputs -->
+			<label for="name" id="name-label">* Name: </label>
+			<input id="name" type="text" name="name" placeholder="Enter your name" required>
+		
+			<label for="email" id="email-label">* Email: </label>
+			<input id="email" type="email" name="email" placeholder="Enter your email" required>
+		
+			<label for="age" id="number-label">* Age: </label>
+			<input id="number" type="number" name="age" min="1" max="150" placeholder="Age" required>
+			
+			<!-- select input -->
+			<label for="level">* Select the option that best describes your situation? </label>
+			<select id="dropdown" name="level" required>
+				<option value="" selected disabled>Select an option</option>
+				<option value="student">Student</option>
+				<option value="hobbyist">Hobbyist</option>
+				<option value="semi-professional">Semi-professional</option>
+				<option value="professional">Professional</option>
+			</select>
+			
+			<!-- radio button inputs 1 -->
+			<label>Which are you primarily:</label>
+			
+			<ul>
+				<li>
+					<label for="option1">			
+						<input type="radio" id="option1" name="role" value="musician">
+						Musician
+					</label>
+				</li>
+				<li>
+					<label for="option2">
+						<input type="radio" id="option2" name="role" value="producer">
+						Producer
+					</label>
+				</li>
+				<li>
+					<label for="option3">
+						<input type="radio" id="option3" name="role" value="mixing_engineer">
+						Mixing Engineer
+					</label>
+				</li>
+				<li>
+					<label for="option4">
+						<input type="radio" id="option4" name="role" value="mastering_engineer">
+						Mastering Engineer
+					</label>
+				</li>	
+			</ul>	
+
+			<!-- radio button inputs 2 -->
+			<label>Which operating system do you use for music production:</label>
+			
+			<ul>
+				<li>
+					<label for="mac">			
+						<input type="radio" id="mac" name="os" value=mac">
+						Mac
+					</label>
+				</li>
+				<li>
+					<label for="pc">			
+						<input type="radio" id="pc" name="os" value="pc">
+						PC
+					</label>
+				</li>
+				<li>
+					<label for="linux">			
+						<input type="radio" id="linux" name="os" value="linux">
+						Linux
+					</label>
+				</li>
+				<li>
+					<label for="ios">			
+						<input type="radio" id="ios" name="os" value="ios">
+						iOS
+					</label>
+				</li>
+				<li>
+					<label for="android">			
+						<input type="radio" id="android" name="os" value="android">
+						Android
+					</label>
+				</li>
+			</ul>
+
+			<!-- checkbox inputs -->
+			<label>Select the software you use to create music (select that apply):</label>
+
+			<ul>
+				<li>
+					<label for="pro_tools">			
+						<input type="checkbox" id="pro_tools" name="software" value="pro_tools">
+						Pro Tools
+					</label>
+				</li>
+				<li>
+					<label for="logic">			
+						<input type="checkbox" id="logic" name="software" value="logic">
+						Logic
+					</label>
+				</li>
+				<li>
+					<label for="cubase">			
+						<input type="checkbox" id="cubase" name="software" value="cubase">
+						Cubase
+					</label>
+				</li>
+				<li>
+					<label for="studio_one">			
+						<input type="checkbox" id="studio_one" name="software" value="studio_one">
+						Studio One
+					</label>
+				</li>
+				<li>
+					<label for="reaper">			
+						<input type="checkbox" id="reaper" name="software" value="reaper">
+						Reaper
+					</label>
+				</li>
+				<li>
+					<label for="ableton">			
+						<input type="checkbox" id="ableton" name="software" value="ableton">
+						Ableton
+					</label>
+				</li>
+				<li>
+					<label for="other">			
+						<input type="checkbox" id="other" name="software" value="other">
+						Other
+						<input type="text" id="otherValue" name="other">
+					</label>
+				</li>
+			</ul>
+				
+		  <!-- textarea input -->
+			<label for="comments">Please add any comments you have about the survey:</label>
+		  <textarea type="textarea" name="comments" rows="5" cols="33">
+			</textarea>
+			  
+			<!-- submit button  -->
+			<input type="submit" id="submit">
+				
+		</form>
+	</main>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
