@@ -65,7 +65,7 @@ input, textarea {
   opacity: 1.0; 
 }
 
-#name, #email, #age {
+#name, #email, #number {
  		padding: 5px;
   	margin: 0;
   	max-width: 250px;
