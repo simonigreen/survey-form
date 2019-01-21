@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>Survey Form</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito%7COpen+Sans" rel="stylesheet">
 </head>
 <body>
+
 	<div class="grid_wrapper">
+		
 		<header>
 			<h1 id="title">Survey Form</h1>
 		</header>
@@ -28,10 +31,10 @@
 					<input id="email" type="email" name="email" placeholder="Enter your email" required>
 				
 					<label for="age" id="number-label">* Age: </label>
-					<input id="number" type="number" name="age" min="1" max="150" placeholder="Age" required>
+					<input id="age" type="number" name="age" min="1" max="150" placeholder="Age" required>
 					
 					<!-- select input -->
-					<label for="level">* Select the option that best describes your situation? </label>
+					<label for="dropdown">* Select the option that best describes your situation? </label>
 					<select id="dropdown" name="level" required>
 						<option value="" selected disabled>Select an option</option>
 						<option value="student">Student</option>
@@ -71,12 +74,12 @@
 					</ul>	
 
 					<!-- radio button inputs 2 -->
-					<label>Which operating system do you use for music production:</label>
+					<label>Which operating system do you use:</label>
 					
 					<ul>
 						<li>
 							<label for="mac">			
-								<input type="radio" id="mac" name="os" value=mac">
+								<input type="radio" id="mac" name="os" value="mac">
 								Mac
 							</label>
 						</li>
@@ -107,7 +110,7 @@
 					</ul>
 
 					<!-- checkbox inputs -->
-					<label>Select the software you use to create music (select that apply):</label>
+					<label>Select the software you use (check all that apply):</label>
 
 					<ul>
 						<li>
@@ -150,14 +153,14 @@
 							<label for="other">			
 								<input type="checkbox" id="other" name="software" value="other">
 								Other
-								<input type="text" id="otherValue" name="other">
+								<input type="text" id="otherValue" name="software">
 							</label>
 						</li>
 					</ul>
 						
 				  <!-- textarea input -->
 					<label for="comments">Please add any comments you have about the survey:</label>
-				  <textarea type="textarea" name="comments" rows="5" cols="33">
+				  <textarea name="comments" id="comments" rows="5" cols="33">
 					</textarea>
 				</div>
 
@@ -170,6 +173,6 @@
 		</main>
 	</div>
 
-	<script type="text/javascript" src="script.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
